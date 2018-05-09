@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<millionaire>
+  <game id="1">
+    <question>	До какого события продолжается рождественский пост?</question>
+    <answers>
+      <answer bool="true">До первой звезды</answer>
+      <answer>До заката солнца</answer>
+      <answer>До конца света</answer>
+      <answer>Никакого, пост вечен</answer>
+    </answers>
+  </game>
+  <game id="2">
+    <question>	Какую фамилию носил главный герой поэмы А. Твардовского?</question>
+    <answers>
+      <answer bool="true">Тёркин</answer>
+      <answer>Зайкин</answer>
+      <answer>Кузькин</answer>
+      <answer>Побегайкин</answer>
+    </answers>
+  </game>
+  <game id="3">
+    <question> 	За чем послала жена мужа в мультфильме "Падал прошлогодний снег"?</question>
+    <answers>
+      <answer>За помидорами</answer>
+      <answer bool="true">За елкой</answer>
+      <answer>За огурцами</answer>
+      <answer>Затем</answer>
+    </answers>
+  </game>
+  <game id="4">
+    <question>Как называют ударный номер концерта?</question>
+    <answers>
+      <answer>Фиаско</answer>
+      <answer>Бомбящий</answer>
+      <answer>Жесткий</answer>
+      <answer bool="true">Гвоздь программы</answer>
+    </answers>
+  </game>
+  <game id="5">
+    <question>Какой металл обязательно присутствует в амальгаме?</question>
+    <answers>
+      <answer bool="true">Ртуть</answer>
+      <answer>Водка</answer>
+      <answer>Амиак</answer>
+      <answer>Кислота</answer>
+    </answers>
+  </game>
+  <game id="6">
+    <question>Какое слово образовано не от числа "три"?</question>
+    <answers>
+      <answer>Тризвук</answer>
+      <answer>Тризвучие</answer>
+      <answer>Тритон</answer>
+      <answer bool="true">Триллер</answer>
+    </answers>
+  </game>
+  <game id="7">
+    <question>Какое из этих животных полосатое?</question>
+    <answers>
+      <answer>Кенгуру</answer>
+      <answer>Белка</answer>
+      <answer bool="true">Зебра</answer>
+      <answer>Кролик</answer>
+    </answers>
+  </game>
+  <game id="8">
+    <question> 	Какой стране принадлежат Канарские острова?</question>
+    <answers>
+      <answer bool="true">Испания</answer>
+      <answer>Инопланетяния</answer>
+      <answer>Марсия</answer>
+      <answer>Земляния</answer>
+    </answers>
+  </game>
+  <game id="9">
+    <question>Какое прозвище дал народ креплёным винам низкого качества?</question>
+    <answers>
+      <answer>Нищеброды</answer>
+      <answer>Бичи</answer>
+      <answer bool="true">Чернила</answer>
+      <answer>Бомжи</answer>
+    </answers>
+  </game>
+  <game id="10">
+    <question>На кого бежит зверь в известной пословице?</question>
+    <answers>
+      <answer bool="true">На ловца</answer>
+      <answer>На костер</answer>
+      <answer>На Джеки Чана</answer>
+      <answer>На программистов</answer>
+    </answers>
+  </game>
+  <game id="11">
+    <question> Какое перо чаще всего использовали в старину для письма?</question>
+    <answers>
+      <answer>С Aliexpress</answer>
+      <answer>Голубинное</answer>
+      <answer bool="true">Гусинное</answer>
+      <answer>Страусинное</answer>
+    </answers>
+  </game>
+  <game id="12">
+    <question>Как современные школьники называют очень усердного ученика?</question>
+    <answers>
+      <answer>Умник</answer>
+      <answer>Школота</answer>
+      <answer bool="true">Ботаник</answer>
+      <answer>Биолог</answer>
+    </answers>
+  </game>
+  <game id="13">
+    <question>Без чего невозможно играть в орлянку?</question>
+    <answers>
+      <answer>Без полиции</answer>
+      <answer bool="true">Без монеты</answer>
+      <answer>Без помощи госдепа</answer>
+      <answer>Без усов</answer>
+    </answers>
+  </game>
+  <game id="14">
+    <question>	Как в школе иначе называют единицу?</question>
+    <answers>
+      <answer>Попадос</answer>
+      <answer>Фиаско</answer>
+      <answer  bool="true">Кол</answer>
+      <answer>Двойка</answer>
+    </answers>
+  </game>
+  <game id="15">
+    <question>Что, согласно примете, происходит с человеком, если он летает во сне?</question>
+    <answers>
+      <answer>Жиреет</answer>
+      <answer>Умнеет</answer>
+      <answer>Тупеет</answer>
+      <answer bool="true">Растет</answer>
+    </answers>
+  </game>
+</millionaire>

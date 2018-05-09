@@ -1,0 +1,101 @@
+﻿<Window x:Class="WPF_millionaire.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_millionaire"
+        mc:Ignorable="d"
+        Title="Кто хочет стать миллионером?" Foreground="Orange" FontWeight="Bold" Height="340.667"  Width="369.792" MinHeight="400" MinWidth="500"  WindowStartupLocation="CenterScreen" Icon="Image/logo.png">
+    <Grid>
+        <Label>
+            <Label.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="DarkMagenta" Offset="1"/>
+                    <GradientStop Color="Magenta"/>
+                </RadialGradientBrush>
+            </Label.Background>
+        </Label>
+        <!--main menu-->
+        <Grid Name="MainMenu">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="1" VerticalAlignment="Center">
+                <Image Source="Image\mil.png"  Stretch="Uniform"></Image>
+            </Label>
+            <Button VerticalAlignment="Bottom" MinWidth="70" MaxHeight="70" MinHeight="50" MaxWidth="300" Height="Auto" Width="Auto" Margin="79.8,0,73.6,12.4" Background="Violet" Click="StartGame" Grid.Column="1">Играть
+            </Button>
+        </Grid>
+        <!--game-->
+        <DockPanel  Name="game" Visibility="Hidden">
+            <Border DockPanel.Dock="Right" Background="Black" Margin="5">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Width="Auto" Height="Auto" Name="NumberQuestion"></StackPanel>
+                    <StackPanel Width="Auto" Height="Auto" Grid.Column="1" Name="BoardMoney">
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <Grid Height="50" VerticalAlignment="Top" DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="83*"></ColumnDefinition>
+                    <ColumnDefinition Width="83*"></ColumnDefinition>
+                    <ColumnDefinition Width="84*"></ColumnDefinition>
+                    <ColumnDefinition Width="83*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Foreground="Red" FontWeight="Bold" Grid.Column="0" Margin="5" Click="ExitClick">Выход</Button>
+                <Button Name="ButtonFiftyFifty" Grid.Column="1" Margin="5" Click="FiftyFiftyClick" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Image Source="Image\fiftyFifty1.png"  Stretch="Uniform"></Image>
+                </Button>
+                <Button  Name="ButtonHall" Grid.Column="2" Margin="5" Click="HallClick" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Image Source="Image\hall1.png"  Stretch="Uniform"></Image>
+                </Button>
+                <Button  Name="ButtonCall" Grid.Column="3" Margin="5" Click="CallClick" Background="{x:Null}" BorderBrush="{x:Null}">
+                    <Image Source="Image\call1.png"  Stretch="Uniform"></Image>
+                </Button>
+            </Grid>
+            <Grid DockPanel.Dock="Bottom">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button Name="bt0" Background="Violet" Margin="5" Height="50" Click="Click"></Button>
+                <Button Name="bt1" Background="Violet" Grid.Column="1" Margin="5" Height="50" Click="Click"></Button>
+                <Button Name="bt2" Background="Violet" Grid.Row="1" Margin="5" Height="50" Click="Click"></Button>
+                <Button Name="bt3" Background="Violet" Grid.Row="1" Grid.Column="1" Margin="5" Height="50" Click="Click"></Button>
+            </Grid>
+            <Viewbox Margin="50">
+                <TextBlock Name="question"></TextBlock>
+            </Viewbox>
+        </DockPanel>
+        <Grid Name="End" Visibility="Hidden">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Viewbox Grid.Column="1" VerticalAlignment="Bottom">
+                <TextBlock  Name="winOrLose" HorizontalAlignment="Center"  Margin="20">dfsfd</TextBlock>
+            </Viewbox>
+            <StackPanel Grid.Row="1" Grid.Column="1">
+                <Button  VerticalAlignment="Top" Click="StartGame" MinWidth="70" MaxHeight="130" MinHeight="50" MaxWidth="300" Height="Auto"  Background="Violet">Играть</Button>
+
+                <Button  Margin="0,5,0,0" Click="MainMenuClick" MinWidth="70" MaxHeight="130" MinHeight="50" MaxWidth="300" Height="Auto"  Background="Violet">Главное меню</Button>
+
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
